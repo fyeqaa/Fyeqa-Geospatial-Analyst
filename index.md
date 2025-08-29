@@ -3,10 +3,11 @@ Welcome to my geospatial data portfolio.
 
 ## 📁 Projects
 
-### 🟢 Community Park Accessibility in Berlin
-- Analysis of park distribution and accessibility
-- Tools: Python, GeoPandas, Folium, Matplotlib
-- [View Project](projects/berlin_park_accessibility.md)
+### Community Park Accessibility in Berlin
+Spatial analysis of green space access across Berlin districts.
+
+🔗 [View Project Summary](projects/berlin_park_accessibility.md)
+🔗 [View Code on GitHub](https://github.com/yourusername/berlin-park-accessibility)
 
 
 ## 📜 About Me
