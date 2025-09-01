@@ -1,29 +1,16 @@
 # 🟢 Community Park Accessibility in Berlin
 
-## 📌 Objective
+##  Objective
 
-Analyze the spatial accessibility of parks in Berlin using district-level population data and proximity buffers.
+This project analyzes the spatial distribution, accessibility, and equity of public parks across Berlin using geospatial data at two administrative levels:
 
-## 🔗 Project Repository
+- **District level** (Bezirk)
+- **Sub-district level** (Ortsteil)
+---
+## Project Repository
 
-👉 [View Full Project on GitHub](https://github.com/yourusername/berlin-park-accessibility)
+👉 [View Full Project on GitHub](https://github.com/fyeqaa/berlin-park-accessibility)
 
-## 🧪 Techniques Used
 
-- Spatial joins, buffer analysis, thematic mapping
-- GeoPandas, Matplotlib, Folium
-- EPSG 4326 / 25833 coordinate transformations
-
-## 🗺️ Sample Visual
-
-![Sample Map](https://raw.githubusercontent.com/yourusername/berlin-park-accessibility/main/maps/park_accessibility_map.png)
-
-> *(Make sure the image exists at that path in your repo)*
-
-## 🧠 Key Insights
-
-- Some districts have much lower access to green spaces
-- Buffer analysis revealed walkability gaps
-- Core urban districts are more equitably served
 
 [← Back to Portfolio](../index.md)

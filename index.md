@@ -7,7 +7,7 @@ Welcome to my geospatial data portfolio.
 Spatial analysis of green space access across Berlin districts.
 
 🔗 [View Project Summary](projects/berlin_park_accessibility.md)
-🔗 [View Code on GitHub](https://github.com/yourusername/berlin-park-accessibility)
+🔗 [View Code on GitHub](https://github.com/fyeqaa/berlin-park-accessibility)
 
 
 ## 📜 About Me
