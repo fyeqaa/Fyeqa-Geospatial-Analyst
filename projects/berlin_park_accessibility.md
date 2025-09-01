@@ -1,4 +1,4 @@
-# 🟢 Community Park Accessibility in Berlin
+#  Park Accessibility in Berlin
 
 ##  Objective
 

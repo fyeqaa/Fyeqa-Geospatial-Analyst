@@ -1,9 +1,9 @@
-# 👋 Hi, I'm Fyeqa Akram
+# Hi, I'm Fyeqa Akram
 Welcome to my geospatial data portfolio.
 
-## 📁 Projects
+## Projects
 
-### Community Park Accessibility in Berlin
+### Park Accessibility in Berlin
 Spatial analysis of green space access across Berlin districts.
 
 🔗 [View Project Summary](projects/berlin_park_accessibility.md)
