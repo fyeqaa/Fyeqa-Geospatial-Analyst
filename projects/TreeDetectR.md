@@ -23,7 +23,7 @@ The goal of this project was to detect and segment individual trees within the u
 
 This CHM represents the height of vegetation above ground level. Brighter areas are taller tree canopies.
 
-![CHM](assets/TreeDetectR/Smoothed_CHM.png)
+![CHM](https://fyeqaa.github.io/TreeDetectR/assets/TreeDetectR/Smoothed_CHM.png)
 *Smoothed CHM generated from height-normalized point cloud.*
 
 ---
@@ -32,7 +32,7 @@ This CHM represents the height of vegetation above ground level. Brighter areas 
 
 Red dots represent tree tops detected using Local Maximum Filtering (LMF). This step isolates individual tree peaks from the CHM.
 
-![Tree Tops](assets/TreeDetectR/treetops.png)
+![Tree Tops](https://fyeqaa.github.io/assets/TreeDetectR/treetops.png)
 *Detected treetops overlaid on the CHM.*
 
 ---
