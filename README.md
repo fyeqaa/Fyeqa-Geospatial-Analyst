@@ -13,6 +13,7 @@ This project analyzes the spatial distribution, accessibility, and equity of pub
 
 
 [View Project Summary](projects/berlin_park_accessibility.md)
+
 [View Code on GitHub](https://github.com/fyeqaa/berlin-park-accessibility)
 
 ---
@@ -25,6 +26,7 @@ This project analyzes the spatial distribution, accessibility, and equity of pub
 
 
  [View Project Summary](projects/TreeDetectR.md)
+ 
  [View Code on GitHub](https://github.com/fyeqaa/TreeDetectR)
 
 ---
