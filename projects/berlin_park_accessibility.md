@@ -7,9 +7,10 @@ This project analyzes the spatial distribution, accessibility, and equity of pub
 - **District level** (Bezirk)
 - **Sub-district level** (Ortsteil)
 ---
+
 ## Project Repository
 
-👉 [View Full Project on GitHub](https://github.com/fyeqaa/berlin-park-accessibility)
+[View Full Project on GitHub](https://github.com/fyeqaa/berlin-park-accessibility)
 
 
 

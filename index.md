@@ -10,5 +10,10 @@ Spatial analysis of green space access across Berlin districts.
 🔗 [View Code on GitHub](https://github.com/fyeqaa/berlin-park-accessibility)
 
 
-## 📜 About Me
-Geospatial analyst with a passion for mapping urban equity and environmental risk. Skilled in Python, QGIS, and remote sensing.
+### Tree Detection and Segmentation
+TreeDetectR: Detect and Segment Urban Trees from LiDAR Point Cloud Data
+
+🔗 [View Project Summary](projects/TreeDetectR.md)
+🔗 [View Code on GitHub](https://github.com/fyeqaa/TreeDetectR)
+
+
