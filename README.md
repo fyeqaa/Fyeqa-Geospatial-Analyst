@@ -10,20 +10,24 @@ This project analyzes the spatial distribution, accessibility, and equity of pub
 
 - **District level** (Bezirk)
 - **Sub-district level** (Ortsteil)
----
+
 
 [View Project Summary](projects/berlin_park_accessibility.md)
 [View Code on GitHub](https://github.com/fyeqaa/berlin-park-accessibility)
 
+---
+
 
 ### Tree Detection and Segmentation
 **TreeDetectR** is an R package designed to process LiDAR point cloud data for the detection and segmentation of individual trees in urban environments. It supports ground classification, canopy height modeling, tree top detection, tree segmentation, and exporting spatial tree coordinates.
--  Simple integration with `lidR`, `terra`, `sf`, `raster`, and `RCSF` packages
+
+- Libraries Used `lidR`, `terra`, `sf`, `raster`, and `RCSF` packages
 
 
----
  [View Project Summary](projects/TreeDetectR.md)
  [View Code on GitHub](https://github.com/fyeqaa/TreeDetectR)
+
+---
 
 
 ## Connect with Me
