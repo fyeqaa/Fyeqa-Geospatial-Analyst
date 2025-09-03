@@ -18,7 +18,7 @@
 
 ---
 
-## Detailed Methodology
+## Methodology
 
 This project was executed entirely using the **ESA SNAP Toolbox** with Sentinel-1 SAR imagery. All processing steps were performed through SNAP's graphical interface (no custom code).
 
@@ -66,11 +66,11 @@ Following the standard Sentinel-1 GRD preprocessing chain in SNAP:
 
 ### Example Image:
 
-![Satelite Sar image](assets/oil-spill-detection-snap/raw_image.png)
+![Satelite Sar image](/assets/oil-spill-detection-snap/raw_image.png)
 
-![Filtered sar image](assets/oil-spill-detection-snap/filtered_sar.png)
+![Filtered sar image](/assets/oil-spill-detection-snap/filtered_sar.png)
 
-![Detected Oil Spill](assets/oil-spill-detection-snap/oil_spill_detection.png)
+![Detected Oil Spill](/assets/oil-spill-detection-snap/oil_spill_detection.png)
 
 ---
 
@@ -85,6 +85,6 @@ Following the standard Sentinel-1 GRD preprocessing chain in SNAP:
 
 View the full project summary here:
 
-[Oil Spill Detection - Presentation (PDF)](assets/oil-spill-detection-snap/presentation.pdf)
+[Oil Spill Detection - Presentation (PDF)](/assets/oil-spill-detection-snap/Presentation.pdf)
 
 ---

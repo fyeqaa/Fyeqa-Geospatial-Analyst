@@ -39,8 +39,9 @@ A GUI-based remote sensing project utilizing ESA’s **SNAP Toolbox** to detect 
 
 - Tools Used: `SNAP Toolbox`, `Sentinel-1 SAR`, `VV & VH Polarizations`, `Oil Spill Detection Tool`
 
-[View Project Summary](projects/OilSpillDetection.md)  
+[View Project Summary](projects/oil-spill-detection-snap.md)  
 
+---
 
 ## Connect with Me
 
