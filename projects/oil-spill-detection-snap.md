@@ -68,7 +68,7 @@ Following the standard Sentinel-1 GRD preprocessing chain in SNAP:
 
 ![Satelite Sar image](/assets/oil-spill-detection-snap/raw_image.png)
 
-![Filtered sar image](/assets/oil-spill-detection-snap/filtered_sar.png)
+![Filtered sar image](/assets/oil-spill-detection-snap/Filtered_sar.png)
 
 ![Detected Oil Spill](/assets/oil-spill-detection-snap/oil_spill_detection.png)
 

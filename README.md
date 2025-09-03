@@ -43,6 +43,15 @@ A GUI-based remote sensing project utilizing ESA’s **SNAP Toolbox** to detect 
 
 ---
 
+### ContriBOT — Author Contribution Extraction (R Package)
+
+Collaborated with the **BIH QUEST Center for Responsible Research** to develop **ContriBOT**, an R package for detecting and extracting Author Contribution statements, Acknowledgements, and ORCID mentions from scientific papers. Utilizes PDF-to-text conversion to classify author roles based on the CRediT taxonomy.
+
+- Tools Used: `R`, `oddpub`, `furrr`, `progressr`
+
+[View Project Summary](projects/ContriBOT.md)  
+[View Code on GitHub](https://github.com/quest-bih/ContriBOT)
+
 ## Connect with Me
 
 - Email: fyeqaakram30@gmail.com
