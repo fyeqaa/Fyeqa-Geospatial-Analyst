@@ -20,6 +20,7 @@ This project analyzes the spatial distribution, accessibility, and equity of pub
 
 
 ### Tree Detection and Segmentation
+
 **TreeDetectR** is an R package designed to process LiDAR point cloud data for the detection and segmentation of individual trees in urban environments. It supports ground classification, canopy height modeling, tree top detection, tree segmentation, and exporting spatial tree coordinates.
 
 - Libraries Used `lidR`, `terra`, `sf`, `raster`, and `RCSF` packages
@@ -30,6 +31,15 @@ This project analyzes the spatial distribution, accessibility, and equity of pub
  [View Code on GitHub](https://github.com/fyeqaa/TreeDetectR)
 
 ---
+
+
+### Oil Spill Detection Using SNAP
+
+A GUI-based remote sensing project utilizing ESA’s **SNAP Toolbox** to detect and segment oil spills using **Sentinel-1 SAR** imagery. The workflow included subsetting, preprocessing (radiometric calibration, terrain correction, speckle filtering with Lee Sigma), polarization analysis (VV & VH), and SNAP’s built-in oil spill detection tool for identifying low-backscatter regions typical of oil slicks.
+
+- Tools Used: `SNAP Toolbox`, `Sentinel-1 SAR`, `VV & VH Polarizations`, `Oil Spill Detection Tool`
+
+[View Project Summary](projects/OilSpillDetection.md)  
 
 
 ## Connect with Me
