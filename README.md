@@ -4,6 +4,22 @@ I’m a Geospatial and environmental analyst specializing in geospatial analytic
 
 ## Projects
 
+### Forest Fire Susceptibility & Biodiversity Risk Assessment in Brandenburg
+
+Master’s thesis project leveraging machine learning and explainable AI to assess forest fire susceptibility an impacts on biodiversity in Brandenburg, Germany.
+
+- **Techniques:** Random Forest modeling, Leave-One-Year-Out (LOYO) validation, SHAP explainability  
+- **Data:** Fire occurrence records (2016–2021), climate projections for 2030 & 2050, protected area datasets  
+- **Key Findings:**  
+  - Southern Brandenburg identified as a fire hotspot  
+  - 24% of protected areas overlap with high-risk zones  
+  - Proximity to railways, urban areas, and coniferous forests are major contributors  
+- **Impact:** Proposed nature-based fire management and conservation strategies aligned with EU Biodiversity goals
+
+[View Full Project & Thesis](https://github.com/fyeqaa/forest-fires-susceptilibty)  
+
+---
+
 ### Park Accessibility in Berlin
 
 This project analyzes the spatial distribution, accessibility, and equity of public parks across Berlin using geospatial data at two administrative levels:
@@ -12,7 +28,7 @@ This project analyzes the spatial distribution, accessibility, and equity of pub
 - **Sub-district level** (Ortsteil)
 
 
-[View Project Summary](projects/berlin_park_accessibility.md)
+[View Project Summary](projects/berlin-park-accessibility.md)
 
 [View Code on GitHub](https://github.com/fyeqaa/berlin-park-accessibility)
 
