@@ -1,0 +1,7 @@
+---
+title: "Forest Fire Susceptibility"
+description: "Master’s thesis using ML + XAI to map forest fire risk and biodiversity threats in Brandenburg, Germany."
+image: ../images/Maps_recent.jpg
+link: ../projects/Forest-Fire-Susceptibility.qmd   # 👈 MUST be correct relative path
+page: false   # 👈 prevent rendering this file as a page
+---

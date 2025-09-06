@@ -1,12 +1,21 @@
-# TreeDetectR: Urban Tree Detection from LiDAR in R
+---
+title: "TreeDetectR"
+description: Urban Tree Detection from LiDAR in R
+image: ../images/treedetection.png
+---
+<a href="https://github.com/fyeqaa/TreeDetectR" target="_blank">
+  <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;">
+    GitHub
+  </button>
+</a>
 
-`TreeDetectR` is an R package I developed to detect and segment **individual trees** from **urban LiDAR point cloud data**. This project automates the processing steps, from raw LAS files to georeferenced tree locations.
 
+TreeDetectR is an R package I developed to detect and segment individual tree from urban LiDAR point cloud data. This project automates the processing steps, from raw LAS files to georeferenced tree locations.
 The goal of this project was to detect and segment individual trees within the university campus using FIS-Broker data’s LiDAR point cloud data. 
 
----
 
-## What I Did
+
+What I Did
 
 - Loaded and filtered raw LiDAR data
 - Classified ground points using the Cloth Simulation Filter (CSF)
@@ -15,33 +24,18 @@ The goal of this project was to detect and segment individual trees within the u
 - Segmented individual trees using the Dalponte2016 algorithm
 - Exported georeferenced tree coordinates (X, Y, Z, Latitude, Longitude)
 
----
-
-## Visual Results
-
-### Smoothed Canopy Height Model (CHM)
+#### Visual Results
 
 This CHM represents the height of vegetation above ground level. Brighter areas are taller tree canopies.
 
 ![CHM](/assets/TreeDetectR/Smoothed_CHM.png)
 
-*Smoothed CHM generated from height-normalized point cloud.*
-
----
-
-### Tree Tops Detected
-
 Red dots represent tree tops detected using Local Maximum Filtering (LMF).
 
 ![Tree Tops](/assets/TreeDetectR/treetops.png)
 
-*Detected treetops overlaid on the CHM.*
 
----
-
-
-
-### 4. Georeferenced Tree Coordinates
+#### Georeferenced Tree Coordinates
 
 Tree coordinates were extracted and exported as a CSV file, including height and WGS84 (Lat/Lon) positions.
 
@@ -55,10 +49,8 @@ Tree coordinates were extracted and exported as a CSV file, including height and
 
 ---
 
-## Summary
+#### Summary
 
 This project demonstrates how to automate urban tree detection using LiDAR data in R. With `TreeDetectR`, users can go from raw point cloud to segmented, geolocated individual trees in just a few steps.
 
-Full code & installation:  
-[TreeDetectR GitHub Repo](https://github.com/fyeqaa/TreeDetectR)
 

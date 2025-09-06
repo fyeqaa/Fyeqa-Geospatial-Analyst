@@ -1,0 +1,7 @@
+---
+title: "Park Accessibility in Berlin"
+description: "Analyzed accessibility and equity of public parks in Berlin using geospatial data at district & sub-district levels."
+
+image: ../images/parks.png
+link: https://github.com/fyeqaa/berlin-park-accessibility
+---

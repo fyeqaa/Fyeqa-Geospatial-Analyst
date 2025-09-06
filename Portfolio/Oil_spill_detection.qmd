@@ -1,0 +1,7 @@
+---
+title: "🛢️ Oil Spill Detection Using SNAP"
+description: "Remote sensing project using Sentinel-1 SAR and SNAP Toolbox to detect oil spills. Includes preprocessing and polarization analysis with low-backscatter oil slick detection."
+date: 2025-06-01
+image: ../images/Filtered_sar.png
+link: https://github.com/fyeqaa/oil-spill-detection-snap
+---
