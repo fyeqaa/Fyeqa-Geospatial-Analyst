@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-06-01">
-<meta name="description" content="This project was developed in collaboration with the BIH QUEST Center for Responsible Research as part of my work on text mining and scientific metadata extraction.">
+<meta name="description" content="Monitoring the June 2025 Chios Wildfire Using Satellite Imagery and Google Earth Engine">
 
-<title>ContriBOT — Author Contribution and Acknowledgement Extraction – Fyeqa Akram</title>
+<title>WildFires in Chios Island 2025 – Fyeqa Akram</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,12 +112,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ContriBOT — Author Contribution and Acknowledgement Extraction</h1>
+<h1 class="title">WildFires in Chios Island 2025</h1>
 </div>
 
 <div>
   <div class="description">
-    This project was developed in collaboration with the <strong>BIH QUEST Center for Responsible Research</strong> as part of my work on text mining and scientific metadata extraction.
+    Monitoring the June 2025 Chios Wildfire Using Satellite Imagery and Google Earth Engine
   </div>
 </div>
 
@@ -126,12 +125,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 1, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -141,8 +134,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><a href="https://mini-project-461919.projects.earthengine.app/view/chios-forest-fire-june-2025" target="_blank"> <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> View </button> </a></p>
+<p>This project analyzes fire expansion and impacts of the June 2025 wildfire on Chios Island, Greece, using satellite remote sensing data. By leveraging Google Earth Engine (GEE) and publicly available satellite datasets, the project visualizes fire progression, burned area, and vegetation health changes.</p>
+<hr>
+<section id="data-sources" class="level4">
+<h4 class="anchored" data-anchor-id="data-sources">Data Sources</h4>
+<ul>
+<li><p><strong>Sentinel-2 SR Harmonized (COPERNICUS/S2_SR_HARMONIZED)</strong><br>
+Used for high-resolution true color imagery and NDVI calculation.</p></li>
+<li><p><strong>MODIS Fire Mask (MODIS/061/MOD14A1)</strong><br>
+Daily fire detection product to track fire progression.</p></li>
+<li><p><strong>MODIS Burned Area Product (MODIS/061/MCD64A1)</strong><br>
+Used to identify burned areas and estimate extent.</p></li>
+<li><p><strong>MODIS Vegetation Indices (MODIS/061/MOD13Q1)</strong><br>
+Used for NDVI time series to track vegetation changes pre- and post-fire.</p></li>
+</ul>
+</section>
+<section id="methodology" class="level4">
+<h4 class="anchored" data-anchor-id="methodology">Methodology</h4>
+<ol type="1">
+<li><p><strong>Area of Interest (AOI):</strong><br>
+Defined as Chios Island (Greece), filtered from FAO GAUL Level 2 dataset.</p></li>
+<li><p><strong>Fire Progression Visualization:</strong></p>
+<ul>
+<li>Filtered MODIS daily fire mask for June 21–25, 2025.<br>
+</li>
+<li>Converted fire detection values to colored overlays.<br>
+</li>
+<li>Composited with static Sentinel-2 true color background.<br>
+</li>
+<li>Animated as a GIF to visualize fire spread.</li>
+</ul></li>
+<li><p><strong>Burned Area Mapping:</strong></p>
+<ul>
+<li>Filtered MODIS burned area data for 2025.<br>
+</li>
+<li>Created binary burned area mask and visualized spatial extent.</li>
+</ul></li>
+<li><p><strong>Vegetation Health Assessment:</strong></p>
+<ul>
+<li>Calculated NDVI from MODIS for June 2025, creating an animation to observe vegetation changes.<br>
+</li>
+<li>Used MODIS MOD13Q1 NDVI data for consistent time series analysis.</li>
+</ul></li>
+</ol>
+</section>
+<section id="outputs" class="level4">
+<h4 class="anchored" data-anchor-id="outputs">Outputs</h4>
+<ul>
+<li>Animated GIF of fire progression on Sentinel-2 background.</li>
+<li>Burned area map for 2025 wildfire season.</li>
+<li>NDVI animation showing vegetation health over June 2025.</li>
+<li>NDVI difference map highlighting vegetation loss due to fire.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
