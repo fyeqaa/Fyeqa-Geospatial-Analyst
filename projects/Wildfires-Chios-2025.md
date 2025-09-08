@@ -1,5 +1,5 @@
 ---
-title: "WildFires in Chios Island 2025"
+title: " Mapping WildFires in Chios Island 2025"
 description: Monitoring the June 2025 Chios Wildfire Using Satellite Imagery and Google Earth Engine
 image: ../images/Wildfires.png
 ---
@@ -53,4 +53,5 @@ This project analyzes fire expansion and impacts of the June 2025 wildfire on Ch
 - NDVI animation showing vegetation health over June 2025.
 - NDVI difference map highlighting vegetation loss due to fire.
 
+![Wildfires](../images/Wildfire.png)
 
