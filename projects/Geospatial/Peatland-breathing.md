@@ -63,6 +63,8 @@ A combined plot visualizing:
 ![Monthly Plot](../../images/Monthly_plot.png)
 
 
+![Displacment Plot](../../images/peatland_displacement_.gif)
+
 #### Interpretation
 
 - **Surface Uplift** in July summer correlates with rainfall lagging
