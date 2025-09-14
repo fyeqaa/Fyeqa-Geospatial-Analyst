@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Assessing Forest Fire Susceptibility and Its Impact on Biodiversity in Brandenburg Using Machine Learning and Climate Projections">
+<meta name="description" content="Spatial distribution, accessibility, and equity of public parks across Berlin">
 
-<title>Forest Fire Susceptibility – Fyeqa Akram</title>
+<title>Park Accessibility in Berlin – Fyeqa Akram</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,23 +24,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Fyeqa Akram</span>
     </a>
   </div>
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
@@ -112,12 +112,15 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Forest Fire Susceptibility</h1>
-</div>
+<h1 class="title">Park Accessibility in Berlin</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Geospatial</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Assessing Forest Fire Susceptibility and Its Impact on Biodiversity in Brandenburg Using Machine Learning and Climate Projections
+    Spatial distribution, accessibility, and equity of public parks across Berlin
   </div>
 </div>
 
@@ -134,101 +137,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://github.com/fyeqaa/forest-fires-susceptilibty" target="_blank"> <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> GitHub </button> </a></p>
-<p>This Project is part of my Master’s Thesis at Technische Universität Berlin. The study investigates forest fire susceptibility in Brandenburg, Germany, using machine learning, explainable AI (XAI), and climate projections, while also evaluating the ecological risks to biodiversity within protected areas.</p>
-<p>This project addresses:</p>
+<p><a href="https://github.com/fyeqaa/berlin-park-accessibility" target="_blank"> <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> GitHub </button> </a></p>
+<section id="summary" class="level4">
+<h4 class="anchored" data-anchor-id="summary">Summary</h4>
+<p>In this project, I investigated the distribution, accessibility, and equity of public parks across Berlin at both the district (<em>Bezirk</em>) and sub-district (<em>Ortsteil</em>) levels using geospatial data and 2024 population estimates. The analysis focuses on three main components:</p>
 <ul>
-<li>What are the primary drivers of forest fire susceptibility in Brandenburg?</li>
-<li>Which biodiversity-rich protected areas are most at risk now and in the future?</li>
-<li>How can Explainable AI (XAI) improve the interpretability of fire prediction models?</li>
+<li><strong>Park Availability</strong>: Counts the number of parks per administrative area.</li>
+<li><strong>Park Area per Capita</strong>: Measures green space availability per resident to assess spatial equity.</li>
+<li><strong>Accessibility (800m Buffer)</strong>: Evaluates the share of each area within an 800-meter walking distance to a park.</li>
 </ul>
-<section id="methodology" class="level3">
-<h3 class="anchored" data-anchor-id="methodology">Methodology</h3>
-<section id="data-sources" class="level5">
-<h5 class="anchored" data-anchor-id="data-sources">Data Sources</h5>
-<ul>
-<li>Forest fire occurrences (2016–2021)</li>
-<li>Topographic, vegetation, anthropogenic, and climatic predictors</li>
-<li>Climate projections for 2030 &amp; 2050 under SSP5–8.5</li>
-<li>Protected areas datasets: Natura 2000, WDPA</li>
-</ul>
+<p>The study uses spatial joins, area calculations, and buffer analysis to identify disparities in park access across the city. Results are presented through interactive maps and a detailed summary report, providing actionable insights to support equitable urban planning in Berlin.</p>
 </section>
-<section id="modeling-approach" class="level5">
-<h5 class="anchored" data-anchor-id="modeling-approach">Modeling Approach</h5>
+<section id="key-findings" class="level4">
+<h4 class="anchored" data-anchor-id="key-findings">Key Findings</h4>
 <ul>
-<li>Random Forest (RF): Classification model for forest fire susceptibility</li>
-<li>LOYO (Leave-One-Year-Out): Cross-validation strategy to assess temporal generalization</li>
-<li>Future Projections: Fire prediction for summer seasons of 2030 &amp; 2050</li>
-<li>Explainable AI:
-<ul>
-<li>Feature importance using Gini</li>
-<li>Local and global interpretation with SHAP values</li>
-</ul></li>
+<li>Districts like <strong>Spandau</strong> and <strong>Marzahn-Hellersdorf</strong> offer abundant park area per capita, densely populated areas such as <strong>Friedrichshain-Kreuzberg</strong> have limited green space.</li>
+<li>Nearly 38% of sub-districts lack any parks, revealing significant spatial disparities.</li>
+<li>These findings emphasize the need for targeted urban planning to promote equitable access to green spaces across Berlin.It highlights spatial inequalities in green space availability and park access. Interactive maps and detailed reports are included to support decision-making for equitable park development.</li>
 </ul>
 </section>
-<section id="biodiversity-risk-assessment" class="level5">
-<h5 class="anchored" data-anchor-id="biodiversity-risk-assessment">Biodiversity Risk Assessment</h5>
+<section id="outputs" class="level4">
+<h4 class="anchored" data-anchor-id="outputs">Outputs</h4>
 <ul>
-<li>Spatial overlay of high-risk fire zones and protected areas</li>
-<li>Buffer zone analysis to account for fire spread potential</li>
-<li>Exposure trend comparison across 2021 → 2030 → 2050</li>
+<li><a href="https://fyeqaa.github.io/berlin-park-accessibility/district_park_accessibility_map.html">District map</a></li>
+<li><a href="https://fyeqaa.github.io/berlin-park-accessibility/subdistrict_park_accessibility_map.html">Subdistrict map</a></li>
+<li><a href="https://github.com/fyeqaa/berlin-park-accessibility/blob/main/Results/report.md">Report</a></li>
 </ul>
-</section>
-</section>
-<section id="key-results" class="level3">
-<h3 class="anchored" data-anchor-id="key-results">Key Results</h3>
-<section id="model-performance" class="level5">
-<h5 class="anchored" data-anchor-id="model-performance">Model Performance</h5>
-<ul>
-<li>Historical (LOYO): ~66% accuracy, ROC-AUC: 0.717</li>
-<li>Future scenarios: ~69% accuracy, ROC-AUC: 0.755</li>
-</ul>
-</section>
-<section id="main-drivers" class="level5">
-<h5 class="anchored" data-anchor-id="main-drivers">Main Drivers</h5>
-<ul>
-<li>Proximity to railways and built-up areas</li>
-<li>Forest type – especially Scots pine (coniferous)</li>
-<li>Temperature and precipitation had a secondary but relevant effect</li>
-</ul>
-</section>
-<section id="spatial-insights" class="level5">
-<h5 class="anchored" data-anchor-id="spatial-insights">Spatial Insights</h5>
-<ul>
-<li>Southern Brandenburg identified as a persistent fire hotspot</li>
-<li>24% of protected areas overlap with high-susceptibility zones</li>
-<li>Special Protection Areas (SPAs) under the Birds Directive show growing vulnerability</li>
-</ul>
-</section>
-</section>
-<section id="implications" class="level3">
-<h3 class="anchored" data-anchor-id="implications">Implications</h3>
-<p>This work highlights the importance of integrated, adaptive fire management strategies that combine:</p>
-<ul>
-<li>Nature-Based Solutions (NbS)
-<ul>
-<li>Mixed-species forests</li>
-<li>Vegetated buffer zones</li>
-</ul></li>
-<li>Preventive Measures
-<ul>
-<li>Firebreaks</li>
-<li>Wetland restoration</li>
-<li>Fuel load management</li>
-</ul></li>
-<li>Policy Recommendations
-<ul>
-<li>Align fire risk planning with the **EU Biodiversity Strategy 2030</li>
-<li>Target conservation efforts in high-risk zones</li>
-</ul></li>
-</ul>
-<p>The framework developed here can be replicated in other fire-prone regions to assess ecological risks under future climate scenarios.</p>
-<section id="thesis-document" class="level5">
-<h5 class="anchored" data-anchor-id="thesis-document">Thesis Document</h5>
-<p><em>Thesis PDF coming soon</em> <em>Code and data will be added later (pending permissions)</em></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

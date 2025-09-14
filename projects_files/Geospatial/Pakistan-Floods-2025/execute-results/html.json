@@ -1,0 +1,15 @@
+{
+  "hash": "f174c9b0a979d0ac4289378be17e429c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Flood Detection using Sentinel-1 Radar Data\"\ndescription: Flood Detection in Punjab, Pakistan using Sentinel-1 Radar Data and Google Earth Engine\nimage: ../images/floods.png\n---\n<a href=\"https://mini-project-461919.projects.earthengine.app/view/pakistan-floods-2025\" target=\"_blank\">\n  <button style=\"background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;\">\n    View\n  </button>\n</a>\n\n\n\n#### Project Overview & Objective\n\nIn 2025, Pakistan experienced some of the most severe flooding in its history, with Punjab province among the hardest hit regions. These floods caused extensive damage to lives, infrastructure, agriculture, and the economy, affecting millions.\n\nAccurate and timely flood mapping is critical for disaster response, resource allocation, and recovery planning.\n\nThis project uses **Sentinel-1 Synthetic Aperture Radar (SAR)** data to detect floodwaters in Punjab by analyzing radar backscatter differences between pre-flood and during-flood periods. SAR is especially useful as it can penetrate cloud cover and is unaffected by daylight, providing reliable flood information in all weather conditions.\n\n#### Objectives:\n\n- Detect flood-affected areas in Punjab during a key flood event using radar backscatter thresholding.\n- Compare water extent before and during the flood to assess the scale of inundation.\n- Provide clear, interactive visualizations with side-by-side maps for easy comparison.\n- Create a reproducible Google Earth Engine workflow adaptable for future flood events in Pakistan or similar regions.\n\nBy delivering near-real-time spatial flood information, this work aims to support faster, informed decisions in disaster management and help reduce human and economic losses.\n\n\n#### Data Sources\n- **Sensor**: Sentinel-1 (C-band Synthetic Aperture Radar)  \n- **Product**: `COPERNICUS/S1_GRD`  \n- **Polarization**: VV  \n- **Mode**: Interferometric Wide Swath (IW)  \n- **Resolution**: ~10 meters  \n\n#### Time Periods\n\n| Period       | Date Range             | Purpose               |\n|--------------|------------------------|------------------------|\n| Pre-Flood    | 2025-06-01 to 2025-06-10 | Baseline water extent |\n| During Flood | 2025-08-21 to 2025-09-08 | Flood analysis        |\n\n\n#### Methodology\n\n1. **Filter Sentinel-1 imagery** for Punjab for specified dates.\n2. Compute the **median VV polarization image** for each period.\n3. Apply a **backscatter threshold** of **-19.5 dB** to identify water-covered areas.\n\n#### Outputs\n\n**Left Map**: Pre-flood water extent (blue)\n**Right Map**: Flood water extent (red)\n![Flood Map](../images/Pak_floods.png)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

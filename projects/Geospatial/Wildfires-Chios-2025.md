@@ -1,7 +1,8 @@
 ---
 title: " Mapping WildFires in Chios Island 2025"
+categories: ["Geospatial", "Remote Sensing", "Environmental Monitoring"]
 description: Monitoring the June 2025 Chios Wildfire Using Satellite Imagery and Google Earth Engine
-image: ../images/Wildfires.png
+image: ../../images/Wildfires.png
 ---
 <a href="https://mini-project-461919.projects.earthengine.app/view/chios-forest-fire-june-2025" target="_blank">
   <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;">
@@ -10,14 +11,14 @@ image: ../images/Wildfires.png
 </a>
 
 
-This project analyzes fire expansion and impacts of the June 2025 wildfire on Chios Island, Greece, using satellite remote sensing data. By leveraging Google Earth Engine (GEE) and publicly available satellite datasets, the project visualizes fire progression, burned area, and vegetation health changes.
+#### Project Overview
+Wildfires in the Mediterranean have intensified due to rising temperatures, prolonged droughts, and changing land use patterns, posing severe ecological and economic threats.Remote sensing enables timely monitoring of fire extent and post-fire vegetation recovery, supporting mitigation and restoration efforts in vulnerable Mediterranean landscapes.
+
+I analyzed fire expansion and impacts of the wildfire on NDVI, using opernicus (Sentinel) and MODIS satellite datA. By leveraging Google Earth Engine (GEE) and publicly available satellite datasets, the project visualizes fire progression, burned area, and vegetation health changes.
 
 ---
 
 #### Data Sources
-- **Sentinel-2 SR Harmonized (COPERNICUS/S2_SR_HARMONIZED)**  
-  Used for high-resolution true color imagery and NDVI calculation.
-  
 - **MODIS Fire Mask (MODIS/061/MOD14A1)**  
   Daily fire detection product to track fire progression.
   
@@ -26,7 +27,6 @@ This project analyzes fire expansion and impacts of the June 2025 wildfire on Ch
   
 - **MODIS Vegetation Indices (MODIS/061/MOD13Q1)**  
   Used for NDVI time series to track vegetation changes pre- and post-fire.
-
 
 
 #### Methodology
@@ -53,5 +53,5 @@ This project analyzes fire expansion and impacts of the June 2025 wildfire on Ch
 - NDVI animation showing vegetation health over June 2025.
 - NDVI difference map highlighting vegetation loss due to fire.
 
-![Wildfires](../images/Wildfire.png)
+![Chios Wildfires](../../images/Wildfire.png)
 

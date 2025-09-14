@@ -2,13 +2,14 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/Berlin-park-accessibility.html",
-      "/projects/ContriBOT.html",
-      "/projects/Pakistan-Floods-2025.html",
-      "/projects/Forest-Fire-Susceptibility.html",
-      "/projects/Wildfires-Chios-2025.html",
-      "/projects/oil-spill-detection-snap.html",
-      "/projects/TreeDetectR.html"
+      "/projects/Geospatial/Pakistan-Floods-2025.html",
+      "/projects/Geospatial/Forest-Fire-Susceptibility.html",
+      "/projects/Geospatial/Wildfires-Chios-2025.html",
+      "/projects/Geospatial/oil-spill-detection-snap.html",
+      "/projects/Geospatial/Berlin-park-accessibility.html",
+      "/projects/Geospatial/Peatland-breathing.html",
+      "/projects/R package/ContriBOT.html",
+      "/projects/R package/TreeDetectR.html"
     ]
   }
 ]

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Spatial distribution, accessibility, and equity of public parks across Berlin">
+<meta name="description" content="Flood Detection in Punjab, Pakistan using Sentinel-1 Radar Data and Google Earth Engine">
 
-<title>Berlin Park Accessibility – Fyeqa Akram</title>
+<title>Flood Detection using Sentinel-1 Data – Fyeqa Akram</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,23 +24,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Fyeqa Akram</span>
     </a>
   </div>
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
@@ -112,12 +112,17 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Berlin Park Accessibility</h1>
-</div>
+<h1 class="title">Flood Detection using Sentinel-1 Data</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Geospatial</div>
+    <div class="quarto-category">Remote Sensing</div>
+    <div class="quarto-category">Environmental Monitoring</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Spatial distribution, accessibility, and equity of public parks across Berlin
+    Flood Detection in Punjab, Pakistan using Sentinel-1 Radar Data and Google Earth Engine
   </div>
 </div>
 
@@ -134,28 +139,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://github.com/fyeqaa/berlin-park-accessibility" target="_blank"> <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> GitHub </button> </a></p>
-<section id="summary" class="level4">
-<h4 class="anchored" data-anchor-id="summary">Summary</h4>
-<p>This project investigates the distribution, accessibility, and equity of public parks across Berlin at both the district (<em>Bezirk</em>) and sub-district (<em>Ortsteil</em>) levels using geospatial data and 2024 population estimates. The analysis focuses on three main components:</p>
-<ul>
-<li><strong>Park Availability</strong>: Counts the number of parks per administrative area.</li>
-<li><strong>Park Area per Capita</strong>: Measures green space availability per resident to assess spatial equity.</li>
-<li><strong>Accessibility (800m Buffer)</strong>: Evaluates the share of each area within an 800-meter walking distance to a park.</li>
-</ul>
-<p>The study uses spatial joins, area calculations, and buffer analysis to identify disparities in park access across the city. Results are presented through interactive maps and a detailed summary report, providing actionable insights to support equitable urban planning in Berlin.</p>
+<p><a href="https://mini-project-461919.projects.earthengine.app/view/pakistan-floods-2025" target="_blank"> <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> View </button> </a></p>
+<section id="project-overview" class="level4">
+<h4 class="anchored" data-anchor-id="project-overview">Project Overview</h4>
+<p>Pakistan has been experiencing some of the most severe flooding in its history, with Punjab province among the hardest hit regions in 2025.These floods caused extensive damage to lives, infrastructure, agriculture, and the economy, affecting millions.Accurate and timely flood mapping is critical for disaster response, resource allocation, and recovery planning.</p>
+<p>I used <strong>Sentinel-1 Synthetic Aperture Radar (SAR)</strong> data to detect floodwaters in Punjab by analyzing radar backscatter differences between pre-flood and during-flood periods. SAR is especially useful as it can penetrate cloud cover and is unaffected by daylight, providing reliable flood information in all weather conditions.</p>
 </section>
-<section id="key-findings" class="level4">
-<h4 class="anchored" data-anchor-id="key-findings">Key Findings</h4>
-<p>Districts like <strong>Spandau</strong> and <strong>Marzahn-Hellersdorf</strong> offer abundant park area per capita, densely populated areas such as <strong>Friedrichshain-Kreuzberg</strong> have limited green space. Nearly 38% of sub-districts lack any parks, revealing significant spatial disparities.These findings emphasize the need for targeted urban planning to promote equitable access to green spaces across Berlin.It highlights spatial inequalities in green space availability and park access. Interactive maps and detailed reports are included to support decision-making for equitable park development.</p>
+<section id="objectives" class="level4">
+<h4 class="anchored" data-anchor-id="objectives">Objectives:</h4>
+<ul>
+<li>Detect flood-affected areas in Punjab during a key flood event using radar backscatter thresholding.</li>
+<li>Compare water extent before and during the flood to assess the scale of inundation.</li>
+<li>Provide clear, interactive visualizations with side-by-side maps for easy comparison.</li>
+</ul>
+</section>
+<section id="methodology" class="level4">
+<h4 class="anchored" data-anchor-id="methodology">Methodology</h4>
+<section id="data-sources" class="level5">
+<h5 class="anchored" data-anchor-id="data-sources">Data Sources</h5>
+<ul>
+<li><strong>Sensor</strong>: Sentinel-1 (C-band Synthetic Aperture Radar)<br>
+</li>
+<li><strong>Product</strong>: <code>COPERNICUS/S1_GRD</code><br>
+</li>
+<li><strong>Polarization</strong>: VV<br>
+</li>
+<li><strong>Mode</strong>: Interferometric Wide Swath (IW)<br>
+</li>
+<li><strong>Resolution</strong>: ~10 meters</li>
+</ul>
+</section>
+<section id="modeling-approach" class="level5">
+<h5 class="anchored" data-anchor-id="modeling-approach">Modeling Approach</h5>
+<ol type="1">
+<li><strong>Filter Sentinel-1 imagery</strong> for Punjab for specified dates.</li>
+<li>Compute the <strong>median VV polarization image</strong> for each period.</li>
+<li>Apply a <strong>backscatter threshold</strong> of <strong>-19.5 dB</strong> to identify water-covered areas.</li>
+</ol>
+</section>
+<section id="time-periods" class="level5">
+<h5 class="anchored" data-anchor-id="time-periods">Time Periods</h5>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Period</th>
+<th>Date Range</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pre-Flood</td>
+<td>2025-06-01 to 2025-06-10</td>
+<td>Baseline water extent</td>
+</tr>
+<tr class="even">
+<td>During Flood</td>
+<td>2025-08-21 to 2025-09-08</td>
+<td>Flood analysis</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="outputs" class="level4">
 <h4 class="anchored" data-anchor-id="outputs">Outputs</h4>
-<ul>
-<li><a href="https://fyeqaa.github.io/berlin-park-accessibility/district_park_accessibility_map.html">District map</a></li>
-<li><a href="https://fyeqaa.github.io/berlin-park-accessibility/subdistrict_park_accessibility_map.html">Subdistrict map</a></li>
-<li><a href="https://github.com/fyeqaa/berlin-park-accessibility/blob/main/Results/report.md">Report</a></li>
-</ul>
+<p><strong>Left Map</strong>: Pre-flood water extent (blue) <strong>Right Map</strong>: Flood water extent (red) <img src="../../images/Pak_floods.png" class="img-fluid" alt="Flood Map"></p>
 
 
 </section>

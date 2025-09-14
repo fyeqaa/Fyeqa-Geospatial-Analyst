@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Flood Detection in Punjab, Pakistan using Sentinel-1 Radar Data and Google Earth Engine">
+<meta name="description" content="Monitoring the June 2025 Chios Wildfire Using Satellite Imagery and Google Earth Engine">
 
-<title>Flood Detection using Sentinel-1 Data – Fyeqa Akram</title>
+<title>Mapping WildFires in Chios Island 2025 – Fyeqa Akram</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,23 +24,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Fyeqa Akram</span>
     </a>
   </div>
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
@@ -112,12 +112,17 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Flood Detection using Sentinel-1 Data</h1>
-</div>
+<h1 class="title">Mapping WildFires in Chios Island 2025</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Geospatial</div>
+    <div class="quarto-category">Remote Sensing</div>
+    <div class="quarto-category">Environmental Monitoring</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Flood Detection in Punjab, Pakistan using Sentinel-1 Radar Data and Google Earth Engine
+    Monitoring the June 2025 Chios Wildfire Using Satellite Imagery and Google Earth Engine
   </div>
 </div>
 
@@ -134,72 +139,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://mini-project-461919.projects.earthengine.app/view/pakistan-floods-2025" target="_blank"> <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> View </button> </a></p>
-<section id="project-overview-objective" class="level4">
-<h4 class="anchored" data-anchor-id="project-overview-objective">Project Overview &amp; Objective</h4>
-<p>In 2025, Pakistan experienced some of the most severe flooding in its history, with Punjab province among the hardest hit regions. These floods caused extensive damage to lives, infrastructure, agriculture, and the economy, affecting millions.</p>
-<p>Accurate and timely flood mapping is critical for disaster response, resource allocation, and recovery planning.</p>
-<p>This project uses <strong>Sentinel-1 Synthetic Aperture Radar (SAR)</strong> data to detect floodwaters in Punjab by analyzing radar backscatter differences between pre-flood and during-flood periods. SAR is especially useful as it can penetrate cloud cover and is unaffected by daylight, providing reliable flood information in all weather conditions.</p>
-</section>
-<section id="objectives" class="level4">
-<h4 class="anchored" data-anchor-id="objectives">Objectives:</h4>
-<ul>
-<li>Detect flood-affected areas in Punjab during a key flood event using radar backscatter thresholding.</li>
-<li>Compare water extent before and during the flood to assess the scale of inundation.</li>
-<li>Provide clear, interactive visualizations with side-by-side maps for easy comparison.</li>
-<li>Create a reproducible Google Earth Engine workflow adaptable for future flood events in Pakistan or similar regions.</li>
-</ul>
-<p>By delivering near-real-time spatial flood information, this work aims to support faster, informed decisions in disaster management and help reduce human and economic losses.</p>
+<p><a href="https://mini-project-461919.projects.earthengine.app/view/chios-forest-fire-june-2025" target="_blank"> <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> View </button> </a></p>
+<section id="project-overview" class="level4">
+<h4 class="anchored" data-anchor-id="project-overview">Project Overview</h4>
+<p>Wildfires in the Mediterranean have intensified due to rising temperatures, prolonged droughts, and changing land use patterns, posing severe ecological and economic threats.Remote sensing enables timely monitoring of fire extent and post-fire vegetation recovery, supporting mitigation and restoration efforts in vulnerable Mediterranean landscapes.</p>
+<p>I analyzed fire expansion and impacts of the wildfire on NDVI, using opernicus (Sentinel) and MODIS satellite datA. By leveraging Google Earth Engine (GEE) and publicly available satellite datasets, the project visualizes fire progression, burned area, and vegetation health changes.</p>
+<hr>
 </section>
 <section id="data-sources" class="level4">
 <h4 class="anchored" data-anchor-id="data-sources">Data Sources</h4>
 <ul>
-<li><strong>Sensor</strong>: Sentinel-1 (C-band Synthetic Aperture Radar)<br>
-</li>
-<li><strong>Product</strong>: <code>COPERNICUS/S1_GRD</code><br>
-</li>
-<li><strong>Polarization</strong>: VV<br>
-</li>
-<li><strong>Mode</strong>: Interferometric Wide Swath (IW)<br>
-</li>
-<li><strong>Resolution</strong>: ~10 meters</li>
+<li><p><strong>MODIS Fire Mask (MODIS/061/MOD14A1)</strong><br>
+Daily fire detection product to track fire progression.</p></li>
+<li><p><strong>MODIS Burned Area Product (MODIS/061/MCD64A1)</strong><br>
+Used to identify burned areas and estimate extent.</p></li>
+<li><p><strong>MODIS Vegetation Indices (MODIS/061/MOD13Q1)</strong><br>
+Used for NDVI time series to track vegetation changes pre- and post-fire.</p></li>
 </ul>
-</section>
-<section id="time-periods" class="level4">
-<h4 class="anchored" data-anchor-id="time-periods">Time Periods</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Period</th>
-<th>Date Range</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Pre-Flood</td>
-<td>2025-06-01 to 2025-06-10</td>
-<td>Baseline water extent</td>
-</tr>
-<tr class="even">
-<td>During Flood</td>
-<td>2025-08-21 to 2025-09-08</td>
-<td>Flood analysis</td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="methodology" class="level4">
 <h4 class="anchored" data-anchor-id="methodology">Methodology</h4>
 <ol type="1">
-<li><strong>Filter Sentinel-1 imagery</strong> for Punjab for specified dates.</li>
-<li>Compute the <strong>median VV polarization image</strong> for each period.</li>
-<li>Apply a <strong>backscatter threshold</strong> of <strong>-19.5 dB</strong> to identify water-covered areas.</li>
+<li><p><strong>Area of Interest (AOI):</strong><br>
+Defined as Chios Island (Greece), filtered from FAO GAUL Level 2 dataset.</p></li>
+<li><p><strong>Fire Progression Visualization:</strong></p>
+<ul>
+<li>Filtered MODIS daily fire mask for June 21–25, 2025.<br>
+</li>
+<li>Converted fire detection values to colored overlays.<br>
+</li>
+<li>Composited with static Sentinel-2 true color background.<br>
+</li>
+<li>Animated as a GIF to visualize fire spread.</li>
+</ul></li>
+<li><p><strong>Burned Area Mapping:</strong></p>
+<ul>
+<li>Filtered MODIS burned area data for 2025.<br>
+</li>
+<li>Created binary burned area mask and visualized spatial extent.</li>
+</ul></li>
+<li><p><strong>Vegetation Health Assessment:</strong></p>
+<ul>
+<li>Calculated NDVI from MODIS for June 2025, creating an animation to observe vegetation changes.<br>
+</li>
+<li>Used MODIS MOD13Q1 NDVI data for consistent time series analysis.</li>
+</ul></li>
 </ol>
 </section>
 <section id="outputs" class="level4">
 <h4 class="anchored" data-anchor-id="outputs">Outputs</h4>
-<p><strong>Left Map</strong>: Pre-flood water extent (blue) <strong>Right Map</strong>: Flood water extent (red) <img src="../images/Pak_floods.png" class="img-fluid" alt="Flood Map"></p>
+<ul>
+<li>Animated GIF of fire progression on Sentinel-2 background.</li>
+<li>Burned area map for 2025 wildfire season.</li>
+<li>NDVI animation showing vegetation health over June 2025.</li>
+<li>NDVI difference map highlighting vegetation loss due to fire.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/Wildfire.png" class="img-fluid figure-img"></p>
+<figcaption>Chios Wildfires</figcaption>
+</figure>
+</div>
 
 
 </section>

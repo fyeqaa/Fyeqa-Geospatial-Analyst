@@ -13,7 +13,7 @@ format:
 
 
 <p class="lead">
-  I’m a Geospatial Data Scientist with extensive experience in Python and R, leveraging remote sensing platforms like Google Earth Engine and QGIS to analyze environmental challenges such as biodiversity loss and climate resilience. I apply machine learning models, spatial analysis, and data management to transform Earth Observation data into actionable insights.
+  I’m a Geospatial Data Scientist with extensive experience in Python and R, leveraging remote sensing data to analyze environmental challenges such as biodiversity loss and climate resilience using platforms like Google Earth Engine and QGIS. I apply machine learning models, spatial analysis, and data management to transform Earth Observation data into actionable insights.
   
   Recently, I conducted my Master's thesis on assessing forest fire susceptibility and its impacts on biodiversity using machine learning and climate projection.I also contributed to two R packages focused on scientific metadata extraction and urban tree detection from LIDAR.
 </p>
@@ -28,9 +28,7 @@ format:
     <i class="fab fa-linkedin-in" style="font-size:20px; line-height:40px;"></i>
   </a>
 
-  <a href="assets/Fyeqa_CV.pdf" download class="btn btn-success btn-sm" role="button" style="padding: 0 15px;" title="Download CV">
-    Download CV
-  </a>
+
 
   
   <a href="projects.qmd" class="btn btn-info btn-sm" role="button" style="padding: 0 15px;" title="View Portfolio">

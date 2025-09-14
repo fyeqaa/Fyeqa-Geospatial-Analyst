@@ -1,7 +1,8 @@
 ---
 title: "ContriBOT"
+categories: ["R Packages"]
 description: Detection and extraction of Author Contribution statements and ORCID from scientific papers
-image: ../images/ContriBOT.png
+image: ../../images/ContriBOT.png
 ---
 <a href="https://github.com/quest-bih/ContriBOT" target="_blank">
   <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;">

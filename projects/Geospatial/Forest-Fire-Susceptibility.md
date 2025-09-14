@@ -1,6 +1,8 @@
 ---
 title: "Forest Fire Susceptibility"
-image: ../images/FFS.png
+categories: ["Geospatial", "Remote Sensing", "Environmental Monitoring"]
+
+image: ../../images/FFS.png
 description: Assessing Forest Fire Susceptibility and Its Impact on Biodiversity in Brandenburg Using Machine Learning and Climate Projections
 link: ../projects/Forest-Fire-Susceptibility.qmd   
 ---
@@ -11,15 +13,15 @@ link: ../projects/Forest-Fire-Susceptibility.qmd
 </a>
 
 
-This Project is part of my Master’s Thesis at Technische Universität Berlin. The study investigates forest fire susceptibility in Brandenburg, Germany, using machine learning, explainable AI (XAI), and climate projections, while also evaluating the ecological risks to biodiversity within protected areas.
+This Project is part of my Master’s Thesis at Technische Universität Berlin. The study investigates forest fire susceptibility in Brandenburg, Germany, using machine learning, explainable AI (XAI), and climate projections, while also evaluating the its impacts to biodiversity within protected areas.
 
 This project addresses:
 
 -  What are the primary drivers of forest fire susceptibility in Brandenburg?
--  Which biodiversity-rich protected areas are most at risk now and in the future?
 -  How can Explainable AI (XAI) improve the interpretability of fire prediction models?
+-  Which biodiversity-rich protected areas are most at risk now and in the future?
 
-### Methodology
+#### Methodology
 
 ##### Data Sources
 
@@ -43,7 +45,7 @@ This project addresses:
 - Buffer zone analysis to account for fire spread potential
 - Exposure trend comparison across 2021 → 2030 → 2050
 
-### Key Results
+#### Key Results
 
 ##### Model Performance
 
@@ -62,7 +64,7 @@ This project addresses:
 - 24% of protected areas overlap with high-susceptibility zones
 - Special Protection Areas (SPAs) under the Birds Directive show growing vulnerability
 
-### Implications
+#### Implications
 
 This work highlights the importance of integrated, adaptive fire management strategies that combine:
 
@@ -78,6 +80,21 @@ This work highlights the importance of integrated, adaptive fire management stra
   - Target conservation efforts in high-risk zones
 
 The framework developed here can be replicated in other fire-prone regions to assess ecological risks under future climate scenarios.
+
+#### Outputs
+<p align="center"><strong>Figure 1:</strong> Recent and future forest fire susceptibility maps derived using machine learning and climate projections.</p>
+
+<p align="center">
+  <img src="../../images/Maps_recent.jpg" alt="Recent Map" width="45%" />
+  <img src="../../images/MAPS_future.jpg" alt="Future Map" width="45%" />
+</p>
+<p align="center"><strong>Figure 2:</strong> SHAP value interpretation visualizations showing the influence of each feature on the model's output.</p>
+
+<p align="center">
+  <img src="../../images/shap1.png" alt="Recent Map" width="45%" />
+  <img src="../../images/shap2.png" alt="Future Map" width="45%" />
+</p>
+
 
 
 ##### Thesis Document

@@ -1,78 +1,19 @@
 ---
-title: "Projects"
-listing:
-  contents: projects
-  type: grid
-  grid-columns: 3
-  image-height: 200px
-  #categories: true
-page-layout: full
-title-block-banner: true
+title: Projects
+listing: 
+  - id: Geospatial
+    contents: "projects/Geospatial/*.md"
+    type: grid
+    grid-columns: 2
+  - id: R package
+    contents: "projects/R package/*.md"
+    type: grid
 ---
 
+## Geospatial and Remote Sensing
 
+:::{#Geospatial}
+:::
 
+## R Packages
 
-<!-- ::: {.row } -->
-
-<!-- ::: {col-md-4} -->
-<!-- ![Forest Fire Susceptibility Map](images/Maps_recent.jpg) -->
-
-<!-- ** Forest Fire Susceptibility**   -->
-<!-- Master’s thesis using ML + XAI to assess forest fire susceptibility and biodiversity impact in Brandenburg, Germany. -->
-
-<!-- [Summary](projects/Forest-Fire-Susceptibility.md){.btn .btn-outline-light .btn-sm}   -->
-<!-- [View Project](https://github.com/fyeqaa/forest-fires-susceptilibty){.btn .btn-primary .btn-sm target=_blank} -->
-<!-- ::: -->
-
-<!-- ::: {col-md-4} -->
-<!-- ![Frequency of Parks in Districts](images/parks.png) -->
-
-<!-- ** Park Accessibility in Berlin**   -->
-<!-- Analyzed accessibility and equity of public parks in Berlin using geospatial data. -->
-
-<!-- - District & sub-district level -->
-
-<!-- [Summary](projects/berlin-park-accessibility.md){.btn .btn-outline-light .btn-sm}   -->
-<!-- [View Project](https://github.com/fyeqaa/berlin-park-accessibility){.btn .btn-primary .btn-sm target=_blank} -->
-<!-- ::: -->
-
-<!-- ::: {col-md-4} -->
-<!-- ![TreeDetectR](images/treetops.png) -->
-
-<!-- **🌲 TreeDetectR**   -->
-<!-- R package for detecting and segmenting individual trees in LiDAR point clouds. -->
-
-<!-- - Built with `lidR`, `terra`, `sf` -->
-<!-- - Tree height, top detection, export -->
-
-<!-- [Summary](projects/TreeDetectR.md){.btn .btn-outline-light .btn-sm}   -->
-<!-- [GitHub](https://github.com/fyeqaa/TreeDetectR){.btn .btn-primary .btn-sm target=_blank} -->
-<!-- ::: -->
-
-<!-- ::: {.col-md-4} -->
-<!-- ![Oil Spill Detection](images/Filtered_sar.png) -->
-
-<!-- **🛢️ Oil Spill Detection Using SNAP**   -->
-<!-- Remote sensing project using Sentinel-1 SAR and SNAP Toolbox to detect oil spills. -->
-
-<!-- - Preprocessing, polarization analysis -->
-<!-- - Low-backscatter oil slick detection -->
-
-<!-- [Summary](projects/oil-spill-detection-snap.md){.btn .btn-outline-light .btn-sm} -->
-<!-- ::: -->
-
-<!-- ::: {.col-md-4} -->
-<!-- ![ContriBOT](images/oil_spill_detection.png) -->
-
-<!-- ** ContriBOT — Author Contribution Extraction**   -->
-<!-- R package for extracting CRediT roles, ORCIDs, and acknowledgements from research PDFs. -->
-
-<!-- - Uses `oddpub`, `furrr`, `progressr` -->
-<!-- - Works with plain-text extracted from PDFs -->
-
-<!-- [Summary](projects/ContriBOT.md){.btn .btn-outline-light .btn-sm}   -->
-<!-- [GitHub](https://github.com/quest-bih/ContriBOT){.btn .btn-primary .btn-sm target=_blank} -->
-<!-- ::: -->
-
-<!-- ::: -->

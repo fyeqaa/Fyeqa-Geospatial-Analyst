@@ -1,7 +1,9 @@
 ---
 title: "TreeDetectR"
+categories: ["R Packages"]
+
 description: Urban Tree Detection from LiDAR in R
-image: ../images/treedetection.png
+image: ../../images/treedetection.png
 ---
 <a href="https://github.com/fyeqaa/TreeDetectR" target="_blank">
   <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;">
@@ -28,11 +30,11 @@ What I Did
 
 This CHM represents the height of vegetation above ground level. Brighter areas are taller tree canopies.
 
-![CHM](/assets/TreeDetectR/Smoothed_CHM.png)
+![CHM](../../images/Smoothed_CHM.png)
 
 Red dots represent tree tops detected using Local Maximum Filtering (LMF).
 
-![Tree Tops](/assets/TreeDetectR/treetops.png)
+![Tree Tops](../../images/treetops.png)
 
 
 #### Georeferenced Tree Coordinates

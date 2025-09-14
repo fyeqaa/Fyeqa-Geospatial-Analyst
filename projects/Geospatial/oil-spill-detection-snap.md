@@ -1,27 +1,25 @@
 ---
 title: "Oil Spill Detection"
-image: ../images/OSD.png
+categories: ["Geospatial", "Remote Sensing", "Environmental Monitoring"]
+image: ../../images/OSD.png
 description: Oil Spill detection in Tobago Island, Trinidad and Tobago Using SNAP
 ---
 
-This project was carried out as part of the Microwave and Radar Sensing course.
+This project was carried out as part of the Microwave and Radar Sensing course.️
 
+
+Oil spills are a major environmental hazard, contaminating marine ecosystems, harming wildlife, and disrupting coastal communities.In 2024, a significant oil spill off the coast of Trinidad Island highlighted the urgent need for rapid detection—where satellite-based SAR data proved crucial for monitoring and response.
 
 #### Study Area
 
 - **Location:** Trinidad and Tobago
 - **Event:** Oil Spill on 7th February 2024
 
-
-
-#### Data
+#### Data Sources
 
 - **Source:** Sentinel-1 SAR imagery downloaded from [Copernicus Open Access Hub](https://colhub.copernicus.eu/userguide/)
-- **Focus:** Region of interest around Trinidad and Tobago
 
-
-
-### Methodology
+#### Methodology
 
 This project was executed entirely using the **ESA SNAP Toolbox** with Sentinel-1 SAR imagery. All processing steps were performed through SNAP's graphical interface (no custom code).
 
@@ -67,17 +65,12 @@ Following the standard Sentinel-1 GRD preprocessing chain in SNAP:
 - Successfully identified oil spill areas in Sentinel-1 imagery
 - Demonstrated the effectiveness of radar remote sensing in monitoring maritime disasters
 
-![Satelite Sar image](/assets/oil-spill-detection-snap/raw_image.png)
+![Satelite Sar image](../../images/raw_image.png)
 
-![Subset and Filtered sar image](/assets/oil-spill-detection-snap/Filtered_sar.png)
+![Subset and Filtered sar image](../../images/Filtered_sar.png)
 
-![Detected Oil Spill](/assets/oil-spill-detection-snap/oil_spill_detection.png)
+![Detected Oil Spill](../../images/oil_spill_detection.png)
 
-
-#### Tools & Software
-
-- SNAP Toolbox (Sentinel Application Platform, ESA)
-- Sentinel-1 SAR Data
 
 ##### Project Presentation
 

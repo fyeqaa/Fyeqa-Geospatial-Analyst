@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Urban Tree Detection from LiDAR in R">
+<meta name="description" content="Assessing Forest Fire Susceptibility and Its Impact on Biodiversity in Brandenburg Using Machine Learning and Climate Projections">
 
-<title>TreeDetectR – Fyeqa Akram</title>
+<title>Forest Fire Susceptibility – Fyeqa Akram</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,23 +24,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Fyeqa Akram</span>
     </a>
   </div>
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
@@ -112,12 +112,17 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">TreeDetectR</h1>
-</div>
+<h1 class="title">Forest Fire Susceptibility</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Geospatial</div>
+    <div class="quarto-category">Remote Sensing</div>
+    <div class="quarto-category">Environmental Monitoring</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Urban Tree Detection from LiDAR in R
+    Assessing Forest Fire Susceptibility and Its Impact on Biodiversity in Brandenburg Using Machine Learning and Climate Projections
   </div>
 </div>
 
@@ -134,75 +139,116 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://github.com/fyeqaa/TreeDetectR" target="_blank"> <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> GitHub </button> </a></p>
-<p>TreeDetectR is an R package I developed to detect and segment individual tree from urban LiDAR point cloud data. This project automates the processing steps, from raw LAS files to georeferenced tree locations. The goal of this project was to detect and segment individual trees within the university campus using FIS-Broker data’s LiDAR point cloud data.</p>
-<p>What I Did</p>
+<p><a href="https://github.com/fyeqaa/forest-fires-susceptilibty" target="_blank"> <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> GitHub </button> </a></p>
+<p>This Project is part of my Master’s Thesis at Technische Universität Berlin. The study investigates forest fire susceptibility in Brandenburg, Germany, using machine learning, explainable AI (XAI), and climate projections, while also evaluating the its impacts to biodiversity within protected areas.</p>
+<p>This project addresses:</p>
 <ul>
-<li>Loaded and filtered raw LiDAR data</li>
-<li>Classified ground points using the Cloth Simulation Filter (CSF)</li>
-<li>Built a Digital Terrain Model (DTM) and Canopy Height Model (CHM)</li>
-<li>Detected individual tree tops using local maximum filtering (LMF)</li>
-<li>Segmented individual trees using the Dalponte2016 algorithm</li>
-<li>Exported georeferenced tree coordinates (X, Y, Z, Latitude, Longitude)</li>
+<li>What are the primary drivers of forest fire susceptibility in Brandenburg?</li>
+<li>How can Explainable AI (XAI) improve the interpretability of fire prediction models?</li>
+<li>Which biodiversity-rich protected areas are most at risk now and in the future?</li>
 </ul>
-<section id="visual-results" class="level4">
-<h4 class="anchored" data-anchor-id="visual-results">Visual Results</h4>
-<p>This CHM represents the height of vegetation above ground level. Brighter areas are taller tree canopies.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/TreeDetectR/Smoothed_CHM.png" class="img-fluid figure-img"></p>
-<figcaption>CHM</figcaption>
-</figure>
-</div>
-<p>Red dots represent tree tops detected using Local Maximum Filtering (LMF).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/TreeDetectR/treetops.png" class="img-fluid figure-img"></p>
-<figcaption>Tree Tops</figcaption>
-</figure>
-</div>
+<section id="methodology" class="level4">
+<h4 class="anchored" data-anchor-id="methodology">Methodology</h4>
+<section id="data-sources" class="level5">
+<h5 class="anchored" data-anchor-id="data-sources">Data Sources</h5>
+<ul>
+<li>Forest fire occurrences (2016–2021)</li>
+<li>Topographic, vegetation, anthropogenic, and climatic predictors</li>
+<li>Climate projections for 2030 &amp; 2050 under SSP5–8.5</li>
+<li>Protected areas datasets: Natura 2000, WDPA</li>
+</ul>
 </section>
-<section id="georeferenced-tree-coordinates" class="level4">
-<h4 class="anchored" data-anchor-id="georeferenced-tree-coordinates">Georeferenced Tree Coordinates</h4>
-<p>Tree coordinates were extracted and exported as a CSV file, including height and WGS84 (Lat/Lon) positions.</p>
-<p><strong>Sample of exported data:</strong></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tree ID</th>
-<th>Longitude</th>
-<th>Latitude</th>
-<th>Height (Z)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>001</td>
-<td>13.40123</td>
-<td>52.52041</td>
-<td>17.6</td>
-</tr>
-<tr class="even">
-<td>002</td>
-<td>13.40128</td>
-<td>52.52046</td>
-<td>15.2</td>
-</tr>
-<tr class="odd">
-<td>003</td>
-<td>13.40131</td>
-<td>52.52050</td>
-<td>14.7</td>
-</tr>
-</tbody>
-</table>
-<hr>
+<section id="modeling-approach" class="level5">
+<h5 class="anchored" data-anchor-id="modeling-approach">Modeling Approach</h5>
+<ul>
+<li>Random Forest (RF): Classification model for forest fire susceptibility</li>
+<li>LOYO (Leave-One-Year-Out): Cross-validation strategy to assess temporal generalization</li>
+<li>Future Projections: Fire prediction for summer seasons of 2030 &amp; 2050</li>
+<li>Explainable AI:
+<ul>
+<li>Feature importance using Gini</li>
+<li>Local and global interpretation with SHAP values</li>
+</ul></li>
+</ul>
 </section>
-<section id="summary" class="level4">
-<h4 class="anchored" data-anchor-id="summary">Summary</h4>
-<p>This project demonstrates how to automate urban tree detection using LiDAR data in R. With <code>TreeDetectR</code>, users can go from raw point cloud to segmented, geolocated individual trees in just a few steps.</p>
+<section id="biodiversity-risk-assessment" class="level5">
+<h5 class="anchored" data-anchor-id="biodiversity-risk-assessment">Biodiversity Risk Assessment</h5>
+<ul>
+<li>Spatial overlay of high-risk fire zones and protected areas</li>
+<li>Buffer zone analysis to account for fire spread potential</li>
+<li>Exposure trend comparison across 2021 → 2030 → 2050</li>
+</ul>
+</section>
+</section>
+<section id="key-results" class="level4">
+<h4 class="anchored" data-anchor-id="key-results">Key Results</h4>
+<section id="model-performance" class="level5">
+<h5 class="anchored" data-anchor-id="model-performance">Model Performance</h5>
+<ul>
+<li>Historical (LOYO): ~66% accuracy, ROC-AUC: 0.717</li>
+<li>Future scenarios: ~69% accuracy, ROC-AUC: 0.755</li>
+</ul>
+</section>
+<section id="main-drivers" class="level5">
+<h5 class="anchored" data-anchor-id="main-drivers">Main Drivers</h5>
+<ul>
+<li>Proximity to railways and built-up areas</li>
+<li>Forest type – especially Scots pine (coniferous)</li>
+<li>Temperature and precipitation had a secondary but relevant effect</li>
+</ul>
+</section>
+<section id="spatial-insights" class="level5">
+<h5 class="anchored" data-anchor-id="spatial-insights">Spatial Insights</h5>
+<ul>
+<li>Southern Brandenburg identified as a persistent fire hotspot</li>
+<li>24% of protected areas overlap with high-susceptibility zones</li>
+<li>Special Protection Areas (SPAs) under the Birds Directive show growing vulnerability</li>
+</ul>
+</section>
+</section>
+<section id="implications" class="level4">
+<h4 class="anchored" data-anchor-id="implications">Implications</h4>
+<p>This work highlights the importance of integrated, adaptive fire management strategies that combine:</p>
+<ul>
+<li>Nature-Based Solutions (NbS)
+<ul>
+<li>Mixed-species forests</li>
+<li>Vegetated buffer zones</li>
+</ul></li>
+<li>Preventive Measures
+<ul>
+<li>Firebreaks</li>
+<li>Wetland restoration</li>
+<li>Fuel load management</li>
+</ul></li>
+<li>Policy Recommendations
+<ul>
+<li>Align fire risk planning with the **EU Biodiversity Strategy 2030</li>
+<li>Target conservation efforts in high-risk zones</li>
+</ul></li>
+</ul>
+<p>The framework developed here can be replicated in other fire-prone regions to assess ecological risks under future climate scenarios.</p>
+</section>
+<section id="outputs" class="level4">
+<h4 class="anchored" data-anchor-id="outputs">Outputs</h4>
+<p align="center">
+<strong>Figure 1:</strong> Recent and future forest fire susceptibility maps derived using machine learning and climate projections.
+</p>
+<p align="center">
+<img src="../../images/Maps_recent.jpg" alt="Recent Map" width="45%"> <img src="../../images/MAPS_future.jpg" alt="Future Map" width="45%">
+</p>
+<p align="center">
+<strong>Figure 2:</strong> SHAP value interpretation visualizations showing the influence of each feature on the model’s output.
+</p>
+<p align="center">
+<img src="../../images/shap1.png" alt="Recent Map" width="45%"> <img src="../../images/shap2.png" alt="Future Map" width="45%">
+</p>
+<section id="thesis-document" class="level5">
+<h5 class="anchored" data-anchor-id="thesis-document">Thesis Document</h5>
+<p><em>Thesis PDF coming soon</em> <em>Code and data will be added later (pending permissions)</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
