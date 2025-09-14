@@ -1,50 +1,77 @@
 ---
 title: "Peatland Breathing: Murnauer Moos"
-categories: ["Geospatial", "Remote Sensing", "Environmental Monitoring"]
+categories: ["Geospatial", "Remote Sensing", "InSAR", "Environmental Monitoring"]
 image: ../../images/peatlands.png
-description: Multi-source remote sensing and rainfall data for monthly peatland ecosystem monitoring in 2024.
+description: Multi-sensor monitoring of peatland surface displacement and ecosystem dynamics using InSAR, NDVI, and rainfall data using GEE
 ---
 
-<a href="https://github.com/fyeqaa/Peatland-breathing.git" target="_blank">
+<a href="https://github.com/fyeqaa/Peatland-breathing" target="_blank">
   <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;">
     View on GitHub
   </button>
 </a>
 
-### Project Overview
 
-Peatlands are vital carbon sinks, storing more carbon than all the world’s forests combined—but their stability is sensitive to water level changes.
-The surface “breathing” of peatlands, observed through remote sensing, is a strong proxy for ecosystem health and CO₂ release, making large-scale monitoring essential for climate action.
 
-In this project, I developed a monthly monitoring framework for the temperate peatland ecosystem of Murnauer Moos in 2024. By integrating multi-source remote sensing datasets and climate variables—including Sentinel-1 SAR radar, Sentinel-2 NDVI, and rainfall data,I tracked vegetation and moisture dynamics to assess peatland ecosystem health and environmental responses.
+#### Project Overview
+
+Peatlands are among the most effective carbon sinks, storing more carbon than all global forests combined. Their surface motion, also called **peatland breathing**, is a proxy for water level fluctuations and carbon release potential.
+
+In this project, I monitored the **Murnauer Moos** peatland ecosystem in Germany throughout **2023**, leveraging **InSAR displacement**, **NDVI**, **radar backscatter**, and **rainfall data** to understand its dynamic behavior.
+
 
 
 #### Data Sources
 
-- Sentinel-1 SAR (COPERNICUS/S1_GRD) 
-- Sentinel-2 (COPERNICUS/S2_SR_HARMONIZED)
-- Rainfall (UCSB-CHG/CHIRPS/DAILY)  
+- **Sentinel-1 InSAR Displacement** (`.geo.unw.tif`)
+- **Sentinel-1 VH/VV SAR Backscatter** (COPERNICUS/S1_GRD)
+- **Sentinel-2 NDVI** (COPERNICUS/S2_SR_HARMONIZED)
+- **Rainfall** (UCSB CHIRPS Daily Precipitation)
 
 #### Methodology
 
-- **Study Area**: The Murnauer Moos peatland, a key temperate wetland ecosystem.
-- **Sentinel-1 Processing**: Computation of VH/VV backscatter ratio to track surface water and vegetation moisture content.
-- **Sentinel-2 Processing**: NDVI calculation from harmonized surface reflectance to monitor vegetation health.
-- **Rainfall Data**: Aggregated from daily to monthly scale to capture precipitation patterns affecting the peatland.
-- **Time Series Analysis**: Monthly aggregation and alignment of all variables to facilitate integrated temporal analysis.
+##### 1. **InSAR Displacement**
+- Processed **unwrapped phase** files to derive **monthly surface displacement** in meters.
+- Filtered low-coherence areas and calculated **mean displacement** for each time window.
+- Visualized both time series and **animated maps** showing spatial displacement changes.
 
-#### Results
+#### 2. **Radar Backscatter**
+- Calculated **VH/VV ratio** to assess surface wetness and vegetation water content.
+- Aggregated to monthly averages for temporal comparison.
 
-The VH/VV ratio increases with higher rainfall, indicating enhanced peat surface wetness. Conversely, as vegetation greenness (NDVI) rises during summer, the ratio declines, suggesting canopy growth dampens the radar signal. This highlights the coupled influence of rainfall and vegetation on peatland “breathing” dynamics in Murnauer Moos
+#### 3. **Vegetation Monitoring (NDVI)**
+- Computed NDVI from Sentinel-2 surface reflectance.
+- Used monthly means to track seasonal vegetation growth.
 
-
-![Monthly Plot](../../images//Monthly_plot.png) 
-
-
-#### Future Work
-
-- **InSAR Displacement Monitoring**: Incorporate Interferometric Synthetic Aperture Radar (InSAR) to measure peatland surface displacement and subsidence, enhancing understanding of ground stability and deformation processes.
-- **Water Table Integration**: Combine water table level measurements or groundwater models to better link hydrological conditions with vegetation and surface dynamics.
+#### 4. **Rainfall Analysis**
+- Monthly total rainfall derived from CHIRPS daily data.
+- Compared precipitation with InSAR and vegetation response.
 
 
 
+###  Results & Visualization
+
+####  Multi-Sensor Time Series Plot
+A combined plot visualizing:
+
+- **Blue**: VH/VV radar ratio (moisture)
+- **Green**: NDVI (vegetation health)
+- **Red bars**: Rainfall
+- **Purple (below)**: Mean displacement from InSAR
+
+![Surface Displacemnt](../../images/surface_disp.png)
+![Monthly Plot](../../images/Monthly_plot.png)
+
+
+#### Interpretation
+
+- **Surface Uplift** in July summer correlates with rainfall lagging
+- **Subsidence** in late summer/fall may indicate drying or reduced water table despite rainfall.
+- InSAR reveals **invisible ground motion** that complements vegetation and climate data.
+
+
+#### Future Directions
+
+- **Machine Learning Integration**: Model peatland condition and CO₂ release using satellite + in-situ data.
+- **Validation**: Compare with water table records or Eddy Covariance data.
+- **Generalization**: Expand framework to other peatlands globally.
