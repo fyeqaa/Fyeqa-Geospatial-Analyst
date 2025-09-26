@@ -24,7 +24,7 @@ format:
     <i class="fab fa-github" style="font-size:20px; line-height:40px;"></i>
   </a>
 
-  <a href="https://www.linkedin.com/in/fyeqa-akram-0a0862200/" class="btn btn-primary btn-sm rounded-circle" role="button" target="_blank" style="width:40px; height:40px; padding:0;">
+  <a href="https://www.linkedin.com/in/fyeqa-akram-geospatial-analyst/" class="btn btn-primary btn-sm rounded-circle" role="button" target="_blank" style="width:40px; height:40px; padding:0;">
     <i class="fab fa-linkedin-in" style="font-size:20px; line-height:40px;"></i>
   </a>
 
