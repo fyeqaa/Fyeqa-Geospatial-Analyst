@@ -6,5 +6,5 @@ I’m a Geospatial and environmental analyst specializing in geospatial analytic
 ## Connect with Me
 
 - Email: fyeqaakram30@gmail.com
-- [LinkedIn](https://www.linkedin.com/in/fyeqa-akram-0a0862200/)
+- [LinkedIn](https://www.linkedin.com/in/fyeqa-akram-geospatial-analyst/)
 
