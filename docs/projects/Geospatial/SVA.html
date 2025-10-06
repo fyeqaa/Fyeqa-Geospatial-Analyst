@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Analysis of soil moisture and vegetation dynamics in Sialkot using NDVI, SMAP, CHIRPS (2014–2024)">
 
-<title>Projects – Fyeqa Akram</title>
+<title>Soil–Vegetation–Atmosphere Continuum Using Google Earth Engine – Fyeqa Akram</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +24,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2da9f366fd38e2634a9fbcf54f452ace.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,96 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Geospatial .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Geospatial'] = new List('listing-Geospatial', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-R package .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-R package'] = new List('listing-R package', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -168,7 +81,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Fyeqa Akram</span>
     </a>
   </div>
@@ -179,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
@@ -199,9 +112,17 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
-</div>
+<h1 class="title">Soil–Vegetation–Atmosphere Continuum Using Google Earth Engine</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Geospatial</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Analysis of soil moisture and vegetation dynamics in Sialkot using NDVI, SMAP, CHIRPS (2014–2024)
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -216,215 +137,40 @@ window.Quarto = {
 </header>
 
 
-<section id="geospatial-and-remote-sensing" class="level2">
-<h2 class="anchored" data-anchor-id="geospatial-and-remote-sensing">Geospatial and Remote Sensing</h2>
-<div id="listing-Geospatial" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="R2Vvc3BhdGlhbCUyQ1JlbW90ZSUyMFNlbnNpbmclMkNFbnZpcm9ubWVudGFsJTIwTW9uaXRvcmluZw==" data-listing-file-modified-sort="1757847001245" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
-<a href="./projects/Geospatial/Pakistan-Floods-2025.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/floods.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Flood Detection using Sentinel-1 Data
-</h5>
-<div class="card-text listing-description delink">
-<p>Flood Detection in Punjab, Pakistan using Sentinel-1 Radar Data and Google Earth Engine</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="R2Vvc3BhdGlhbCUyQ1JlbW90ZSUyMFNlbnNpbmclMkNFbnZpcm9ubWVudGFsJTIwTW9uaXRvcmluZw==" data-listing-file-modified-sort="1757846758365" data-listing-reading-time-sort="3" data-listing-word-count-sort="427">
-<a href="./projects/Geospatial/Forest-Fire-Susceptibility.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/FFS.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Forest Fire Susceptibility
-</h5>
-<div class="card-text listing-description delink">
-<p>Assessing Forest Fire Susceptibility and Its Impact on Biodiversity in Brandenburg Using Machine Learning and Climate Projections</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="R2Vvc3BhdGlhbCUyQ1JlbW90ZSUyMFNlbnNpbmclMkNFbnZpcm9ubWVudGFsJTIwTW9uaXRvcmluZw==" data-listing-file-modified-sort="1757847140076" data-listing-reading-time-sort="2" data-listing-word-count-sort="341">
-<a href="./projects/Geospatial/Wildfires-Chios-2025.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/Wildfires.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Mapping WildFires in Chios Island 2025
-</h5>
-<div class="card-text listing-description delink">
-<p>Monitoring the June 2025 Chios Wildfire Using Satellite Imagery and Google Earth Engine</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="R2Vvc3BhdGlhbCUyQ1JlbW90ZSUyMFNlbnNpbmclMkNFbnZpcm9ubWVudGFsJTIwTW9uaXRvcmluZw==" data-listing-file-modified-sort="1757847275861" data-listing-reading-time-sort="2" data-listing-word-count-sort="350">
-<a href="./projects/Geospatial/oil-spill-detection-snap.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/OSD.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Oil Spill Detection
-</h5>
-<div class="card-text listing-description delink">
-<p>Oil Spill detection in Tobago Island, Trinidad and Tobago Using SNAP</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="R2Vvc3BhdGlhbA==" data-listing-file-modified-sort="1757847378270" data-listing-reading-time-sort="2" data-listing-word-count-sort="220">
-<a href="./projects/Geospatial/Berlin-park-accessibility.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/BPA.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Park Accessibility in Berlin
-</h5>
-<div class="card-text listing-description delink">
-<p>Spatial distribution, accessibility, and equity of public parks across Berlin</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="R2Vvc3BhdGlhbCUyQ1JlbW90ZSUyMFNlbnNpbmclMkNJblNBUiUyQ0Vudmlyb25tZW50YWwlMjBNb25pdG9yaW5n" data-listing-file-modified-sort="1757883479663" data-listing-reading-time-sort="2" data-listing-word-count-sort="293">
-<a href="./projects/Geospatial/Peatland-breathing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/peatlands.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Peatland Breathing: Murnauer Moos
-</h5>
-<div class="card-text listing-description delink">
-<p>Multi-sensor monitoring of peatland surface displacement and ecosystem dynamics using InSAR, NDVI, and rainfall data using GEE</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="R2Vvc3BhdGlhbA==" data-listing-file-modified-sort="1759747105988" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
-<a href="./projects/Geospatial/SVA.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/Time_series.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Soil–Vegetation–Atmosphere Continuum Using Google Earth Engine
-</h5>
-<div class="card-text listing-description delink">
-<p>Analysis of soil moisture and vegetation dynamics in Sialkot using NDVI, SMAP, CHIRPS (2014–2024)</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+<!-- <a href="https://github.com/fyeqaa/berlin-park-accessibility" target="_blank"> -->
+<!--   <button style="background-color:#24292e; color:white; padding:8px 16px; border:none; border-radius:5px; cursor:pointer;"> -->
+<!--     GitHub -->
+<!--   </button> -->
+<!-- </a> -->
+<section id="project-overview" class="level4">
+<h4 class="anchored" data-anchor-id="project-overview">Project Overview</h4>
+<p>In this project, I explored the <strong>soil–vegetation–atmosphere continuum</strong> in Sialkot using satellite time series data from <strong>2015 to 2024</strong>. It focuses on assessing the <strong>relationship between water content in soil vegetation atmosphere</strong>.</p>
 </section>
-<section id="r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="r-packages">R Packages</h2>
-
+<section id="data-sources" class="level4">
+<h4 class="anchored" data-anchor-id="data-sources">Data Sources</h4>
+<ul>
+<li><strong>NDVI</strong> – MODIS/061/MOD13Q1 (Vegetation)</li>
+<li><strong>Soil Moisture</strong> – SMAP SPL4SMGP (Soil Moisture content)</li>
+<li>️ <strong>Precipitation</strong> – CHIRPS Daily</li>
+</ul>
+</section>
+<section id="methodology" class="level4">
+<h4 class="anchored" data-anchor-id="methodology">Methodology</h4>
+<ul>
+<li><strong>Trend Analysis</strong> of NDVI and Soil Moisture (2015–2024)</li>
+<li><strong>Correlation Analysis</strong> between vegetation and climate variables</li>
+<li><strong>Seasonal Pattern Extraction</strong> from 10 years of time series</li>
+</ul>
+</section>
+<section id="key-insights" class="level2">
+<h2 class="anchored" data-anchor-id="key-insights">Key Insights</h2>
+<p>It can be observed that precipitation increases soil moisture, which in turn leads to higher NDVI values. This relationship is further supported by the correlation matrix, which shows positive correlations between precipitation and soil moisture, and between soil moisture and NDVI.</p>
+<p><a href="../..\assets/report.pdf">Report (PDF)</a></p>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-R package">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UiUyMFBhY2thZ2Vz" data-listing-file-modified-sort="1757512717667" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
-<a href="./projects/R package/ContriBOT.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/ContriBOT.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-ContriBOT
-</h5>
-<div class="card-text listing-description delink">
-<p>Detection and extraction of Author Contribution statements and ORCID from scientific papers</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UiUyMFBhY2thZ2Vz" data-listing-file-modified-sort="1757512931791" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
-<a href="./projects/R package/TreeDetectR.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/treedetection.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-TreeDetectR
-</h5>
-<div class="card-text listing-description delink">
-<p>Urban Tree Detection from LiDAR in R</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
